@@ -1,0 +1,7 @@
+{
+  "name": "lectureFiveApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
