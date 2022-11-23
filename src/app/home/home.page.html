@@ -14,7 +14,13 @@
   </ion-header>
 
   <div id="container">
+    <ion-item>
+      The forecast for {{ forecastToday.date | date }} is {{ getForecastTypeLabel(forecastToday.type) }}.
+    </ion-item>
+    <ion-item>
+      The forecast for {{ forecastTomorrow.date | date }} is {{ getForecastTypeLabel(forecastTomorrow.type) }} {{ displayRainfall(forecastTomorrow) }}
+    </ion-item>
     <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button [routerLink]="['/profile']">Profile</ion-button>
   </div>
 </ion-content>
