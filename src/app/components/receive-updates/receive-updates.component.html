@@ -1,0 +1,7 @@
+<ion-item>
+  <ion-label>I would like to receive updates</ion-label>
+  <ion-toggle slot="end" [(ngModel)]="receiveUpdates"></ion-toggle>
+</ion-item>
+<ion-item *ngIf="receiveUpdates">
+  <ion-input #email placeholder="Enter an email" (input)="onEmailUpdated(email.value)"></ion-input>
+</ion-item>
